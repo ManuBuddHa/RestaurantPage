@@ -1,0 +1,33 @@
+function menu(){
+   const mainContent = document.querySelector("#content");
+   const heading = document.createElement("h1");
+   const headDiv = document.createElement("div");
+   const content = document.createElement("div");
+   const menu = document.createElement("div");
+   const menu1 = document.createElement("div");
+   const menu2 = document.createElement("div");
+   const m1 = document.createElement("h2");
+   const p1 = document.createElement("p");
+   const m2 = document.createElement("h2");
+   const p2 = document.createElement("p");
+   menu.classList.add("menu");
+   p1.textContent = "The Most Delicious Dish We Have";
+   p2.textContent = "Second Most Delicious Dish";
+   m1.textContent = "Dish 1";
+   m2.textContent = "Dish 2";
+   menu1.appendChild(m1);
+   menu1.appendChild(p1);
+   menu2.appendChild(m2);
+   menu2.appendChild(p2);
+   content.classList.add("content");
+   headDiv.classList.add("headDiv");
+   heading.textContent = "Menu";
+   mainContent.innerHTML="";
+   mainContent.appendChild(headDiv);
+   mainContent.appendChild(content);
+   content.appendChild(menu);
+   menu.appendChild(menu1);
+   menu.appendChild(menu2);
+   headDiv.appendChild(heading);
+}
+export {menu};

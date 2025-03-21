@@ -4,6 +4,10 @@ function about(){
    const headDiv = document.createElement("div");
    const content = document.createElement("div");
    const images = document.createElement("div");
+   const text = document.createElement("div");
+   const p1 = document.createElement("p");
+   p1.textContent = "Welcome to the about section of this Page. Here should be About!";
+   text.appendChild(p1);
    images.classList.add("imageDiv");
    const img1 = document.createElement("img");
    const img2 = document.createElement("img");
@@ -21,6 +25,7 @@ function about(){
    mainContent.appendChild(content);
    headDiv.appendChild(heading);
    content.appendChild(images);
+   content.appendChild(text);
    images.appendChild(img1);
    images.appendChild(img2);
    images.appendChild(img3);

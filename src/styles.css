@@ -19,6 +19,7 @@
 }
 .content{
    display: flex;
+   flex-direction: column;
    background-color: violet;
    width: 75vw;
    height: 25vh;
@@ -37,7 +38,7 @@
 }
 .images{
    width: 12vw;
-   height: 10vh;
+   height: 5vh;
    background-color: red;
    margin: auto;
 }
